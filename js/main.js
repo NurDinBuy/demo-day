@@ -30,7 +30,7 @@ const bindPostData = (form) => {
         await formData.forEach((item, i) => obj[i] = item)
         const json = await JSON.stringify(obj)
         if (name.value === '') {
-            return alert('Введиет ваше имя!')
+            return alert('Введите ваше имя!')
         }
         if (password.value === '') {
             return alert('Вы не придумали пароль!')
