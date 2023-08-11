@@ -15,10 +15,18 @@
     <div class="form">
         <form action="#">
             <h3>Регистрация</h3>
-            <input required placeholder="Имя" name="username" type="text" id="name">
-            <input required placeholder="Пароль" name="password" type="password" id="pass">
-            <input required placeholder="Введите пароль ещё раз" type="password" id="passRep">
-            <button id="btn">Зарегистрироваться</button>
+            <div class="inputs">
+                <input required placeholder="Login" name="username" type="text" id="name">
+                <div class="password">
+                    <input required placeholder="Пароль" name="password" type="password" id="pass" class="passes">
+                    <a href="#" class="password-control"></a>
+                </div>
+                <div class="password">
+                    <input required placeholder="Повторите пароль" type="password" id="passRep" class="passes">
+                    <a href="#" class="password-control"></a>
+                </div>
+            </div>
+            <button id="btn">Регистрация</button>
         </form>
         <div class="okay">
             <img src="./img/okay.png" alt="#">
