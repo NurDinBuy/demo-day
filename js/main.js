@@ -4,6 +4,22 @@ const button = document.querySelector('#btn')
 const password = document.querySelector('#pass')
 const passwordRepeat = document.querySelector('#passRep')
 const name = document.querySelector('#name')
+const passes = document.querySelectorAll('.password')
+
+passes.forEach(input => {
+    const control = input.querySelector('.password-control')
+    const password = input.querySelector('input')
+    
+    control.onclick = (event) => {
+        if (password.getAttribute('type') === 'password') {
+            event.target.classList.add('view')
+            password.setAttribute('type', 'text');
+        } else {
+            event.target.classList.remove('view')
+            password.setAttribute('type', 'password');
+        }
+    }
+})
 
 const postData = async (url, data) => {
     const response = await fetch(url, {
@@ -30,7 +46,7 @@ const bindPostData = (form) => {
         await formData.forEach((item, i) => obj[i] = item)
         const json = await JSON.stringify(obj)
         if (name.value === '') {
-            return alert('Введите ваше имя!')
+            return alert('Введиет ваше имя!')
         }
         if (password.value === '') {
             return alert('Вы не придумали пароль!')
