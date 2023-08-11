@@ -20,7 +20,7 @@
     height: 362px;
     background: rgba(100%, 100%, 100%, 50%);
     text-align: center;
-    border-radius: 16px;
+    border-radius: 0 16px 0 16px;
     padding: 23px;
 }
 
@@ -47,6 +47,7 @@
     margin-top: 36px;
 }
 
+
 input {
     height: 44px;
     border: none;
@@ -64,7 +65,6 @@ input {
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
-    border-radius: 8px;
     color: #EFEFEF;
     background: #2E8419;
     margin-top: 44px;
