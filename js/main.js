@@ -61,7 +61,7 @@ const bindPostData = (form) => {
             return postData('https://1363-176-123-255-178.ngrok-free.app/auth/register/', json)
         }
         else {
-            return alert('Пароли не совпали')
+            return alert('Пароли не совпали!')
         }
     }
 }
