@@ -5,31 +5,30 @@
 }
 
 .wrapper {
-    background: url("../img/unsplash.png") center no-repeat;
-    background-size: cover;
+    background: url("../img/unsplash.png") no-repeat center;
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .form {
-    width: 463px;
-    height: 362px;
-    background: rgba(247, 247, 247, 50%);
+    width: 420px;
+    height: 480px;
+    background: rgba(247, 247, 247, 15%);
+    backdrop-filter: blur(10px);
     text-align: center;
     border-radius: 0 16px 0 16px;
     padding: 23px;
 }
 
 .form h3 {
-    color: #0B0B0B;
-    font-size: 20px;
+    color: #fff;
+    font-size: 32px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: normal
 }
 
 .form form {
@@ -44,12 +43,12 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin-top: 36px;
+    margin-top: 70px;
 }
 
 
 input {
-    height: 44px;
+    height: 48px;
     border: none;
     padding-left: 5px;
     font-size: 16px;
@@ -60,8 +59,9 @@ input {
 
 #btn {
     width: 306px;
-    height: 35px;
+    height: 55px;
     border: none;
+    border-radius: 8px;
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;
