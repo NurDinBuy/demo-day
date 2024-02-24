@@ -95,6 +95,7 @@ input {
 @media (max-width: 460px) {
     .form {
         width: 310px;
+	padding: 10px;
     }
     
     .inputs, input, #btn {
