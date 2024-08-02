@@ -58,7 +58,7 @@ const bindPostData = (form) => {
             return alert('Вы не повторили пароль!')
         }
         if (password.value === passwordRepeat.value) {
-            return postData('https://7339-91-247-57-70.ngrok-free.app/auth/register/', json)
+            return postData('https://d6a9-91-247-57-70.ngrok-free.app/auth/register/', json)
         }
         else {
             return alert('Пароли не совпали!')
