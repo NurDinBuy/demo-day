@@ -1,104 +1,104 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
-    background: url("../img/unsplash.png") no-repeat center;
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100vh;
+  background: url("../img/unsplash.png") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form {
-    width: 420px;
-    height: 480px;
-    background: rgba(247, 247, 247, 15%);
-    backdrop-filter: blur(10px);
-    text-align: center;
-    border-radius: 16px;
-    padding: 23px 0;
+  width: 420px;
+  height: 480px;
+  background: rgba(247, 247, 247, 15%);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  border-radius: 16px 0 16px 16px;
+  padding: 23px 0;
 }
 
 .form h3 {
-    color: #fff;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .form form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .inputs {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 70px;
 }
 
-
 input {
-    height: 52px;
-    border: none;
-    padding-left: 5px;
-    font-size: 16px;
-    font-weight: 400;
-    width: 380px;
-    border-radius: 8px;
+  height: 52px;
+  border: none;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 380px;
+  border-radius: 8px;
 }
 
 #btn {
-    width: 350px;
-    height: 55px;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 400;
-    cursor: pointer;
-    color: #EFEFEF;
-    background: #2E8419;
-    margin-top: 44px;
+  width: 350px;
+  height: 55px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #efefef;
+  background: #2e8419;
+  margin-top: 44px;
 }
 
 .okay {
-    display: none;
-    margin-top: 130px;
+  display: none;
+  margin-top: 130px;
 }
 
 .password {
-	position: relative;
+  position: relative;
 }
 
 .password-control {
-	position: absolute;
-	top: 11px;
-	right: 10px;
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	background: url(../img/visibility_off.svg) 0 0 no-repeat;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../img/visibility_off.svg) 0 0 no-repeat;
 }
 .password-control.view {
-	background: url(../img/visibility.svg) 0 0 no-repeat;
+  background: url(../img/visibility.svg) 0 0 no-repeat;
 }
 
 @media (max-width: 460px) {
-    .form {
-        width: 310px;
-	padding: 10px;
-    }
-    
-    .inputs, input, #btn {
-        width: 100%;
-    }
+  .form {
+    width: 310px;
+  }
+
+  .inputs,
+  input,
+  #btn {
+    width: 100%;
+  }
 }
