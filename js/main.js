@@ -15,7 +15,7 @@ passes.forEach(input => {
             event.target.classList.add('view')
             password.setAttribute('type', 'text');
         } else {
-            event.target.classList.remove('view')
+            event.target.classList.add('view')
             password.setAttribute('type', 'password');
         }
     }
