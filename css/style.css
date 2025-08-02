@@ -62,7 +62,7 @@ input {
   height: 55px;
   border: none;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 400;
   cursor: pointer;
   color: #efefef;
@@ -103,4 +103,5 @@ input {
     width: 100%;
   }
 }
+
 
