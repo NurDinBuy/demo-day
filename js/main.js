@@ -57,7 +57,8 @@ const bindPostData = (form) => {
         if (passwordRepeat.value === '') {
             return alert('Вы не повторили пароль!')
         }
-        if (password.value === 'https://henry-unstylized-kari.ngrok-free.dev/register/', json)
+        if (password.value === passwordRepeat.value) {
+            postData('https://henry-unstylized-kari.ngrok-free.dev/register/', json)
         }
         else {
             return alert('Пароли не совпали!')
@@ -66,6 +67,7 @@ const bindPostData = (form) => {
 }
 
 bindPostData(form)
+
 
 
 
